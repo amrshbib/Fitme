@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://www.Fitme.com/terms-of-use/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    <iframe src="javascript:void(0)" title="" style="width: 0px; height: 0px; border: 0px; display: none;" src="./Privacy Policy _ Term of Use_files/saved_resource.html"></iframe><script type="text/javascript" src="./Privacy Policy _ Term of Use_files/73d06b4457"></script><script src="./Privacy Policy _ Term of Use_files/nr-1173.min.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"73d06b4457",applicationID:"161076667"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1173.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":2,"licenseKey":"73d06b4457","agent":"","transactionName":"MVNXMUpQCkcDWhJQWwgZcxBWUhBdDVdJUVsLU2oSXVMXXRZcSE9dA0FGX1BcAWsSSw9PVQVPahVXXQ1XGw==","applicationID":"161076667","errorBeacon":"bam.nr-data.net","applicationTime":23}</script>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Privacy Policy | Term of Use</title>
+    <meta name="google-site-verification" content="8t1HWzE_dZQ39N8apKbCTue8dGpZFld2fUZBeaciGhM">
+    <link rel="shortcut icon" href="https://www.Fitme.com/static/images/home/favicon.2d9303dd23b1.png" type="image/x-icon">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:title" content="Privacy Policy | Terms of Use">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" type="text/css" href="./Privacy Policy _ Term of Use_files/privacy.50cc40d208b1.css" defer="">
+    <link rel="stylesheet" type="text/css" href="./Privacy Policy _ Term of Use_files/privacy-new.35bda357ea68.css" defer="">
+    <link rel="stylesheet" type="text/css" href="./Privacy Policy _ Term of Use_files/top_nav_bar.7027e64fd1bc.css" defer="">
+    <link href="./Privacy Policy _ Term of Use_files/css" rel="stylesheet" defer="">
+    <style>
+      ol {
+        counter-reset: item;
+      }
+      ol > li {
+        display: block;
+        margin-bottom: 10px;
+      }
+      ol > li:before {
+        content: counters(item, ".") " ";
+        counter-increment: item;
+        font-weight: 500;
+      }
+
+      .list-head {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      h1 {
+        font-size: 20px !important;
+      }
+      .policy-update-text-v2{
+        line-height: 1.5;
+        font-size: 16px;
+      }
+    </style>
+  
+  <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="L7QA7-M3PBN-YYEWW-23UGW-CB36M",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"L7QA7-M3PBN-YYEWW-23UGW-CB36M",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="yymlwoqxg44vwxztb2ra-f-29c5d410e-clientnsv4-s.akamaihd.net",i={"ak.v":"28","ak.cp":"879630","ak.ai":parseInt("561593",10),"ak.ol":"0","ak.cr":195,"ak.ipv":4,"ak.proto":"h2","ak.rid":"489c305","ak.r":28477,"ak.a2":e,"ak.m":"a","ak.n":"essl","ak.bpcip":"198.24.187.0","ak.cport":49646,"ak.gh":"23.55.57.87","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1597181602","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==Fo1LfudA2zSeEl25NKwWnomKNDLbh1++ZJSn2YWTD2b+CgJVQhwoJczUDOGbfPDSr9LegN869BdGqwUFuqbr3ZwfEsqro58lyPJdnVecwZUaKbrHbQb75zV2RlzdWO+s1+BezQuF9BpfuYWARiJQpxOOBYv1e99o9u5KsGykSJm5umf8L12YpbF7efY8b8XjUFzj+kE7MX0dBx1OTc2JRZn7MzWRWGgRIjrUCB8WOCNwFMxpFdjnlT/lNeo+0QuQ4oG7wRbOum/Rqzuu0capqMF1LGQ2WZCOwRl1SU/XOR7gN8PQr601bck6/cnV6rnz/Y6gaH55BOnFhsHtYQAKygkuatKQOEbKTN42r/U+UJAn1e92UkiJ1KNiwb6BsKGaTfGkhd9DRn8h53sLIbiguxw/Bdad/CFdFVoBRlrG2d0=","ak.pv":"31","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var _={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))i["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:n,init:function(){if(!_.i){var a=BOOMR.subscribe;a("before_beacon",_.av,null,null),a("onbeacon",_.rv,null,null),_.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+  <body>
+    
+    
+
+<nav class="top-navbar-fixed">
+    <div class="navbar-wrapper">
+        <div class="top-nav-bar">
+            <div>
+                <a href="https://www.Fitme.com/">
+                    <img class="hme-logo" src="./Privacy Policy _ Term of Use_files/Fitme_logo.png" alt="Fitme-logo">
+                </a>
+            </div>
+            <div>
+                <div class="dropdown">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</nav> 
+
+    <section class="privacy-policy-section" id="privacySection">
+      <h1 class="text-center">PRIVACY POLICY</h1>
+      <p>
+        This privacy policy (“<strong>Policy</strong>”) was last changed on
+        August 12, 2020. (“<strong>App</strong>”).
+        Please make sure to read such notices carefully.
+      </p>
+      <p>
+        We hold the sincere belief that you should always know what data we
+        collect from you, the purposes for which such data is used, and that you
+        should have the ability to make informed decisions about what data you
+        want to share with us.
+      </p>
+      <p>
+        This is why we want to be fully transparent about: (i) how and why we
+        collect, store, share and use your personal data through the various
+        capacities in which you interact with us; and (ii) the rights that you
+        have to determine the parameters of this interaction.
+      </p>
+      <p>
+        While we would strongly advise you to read the Policy in full, the
+        following summary will give you a snapshot of the salient points covered
+        herein:
+      </p>
+      <ul>
+        <li>
+          This Policy details the critical aspects governing your personal data
+          relationship with ‘Fitme’ which is owned and operated by
+          Fitme , a company incorporated under the
+          laws of Turky
+        </li>
+    
+        <li>
+          Based on whether you are a Visitor or Registered User, the type of
+          data we collect and the purpose for which we use it will differ and
+          this Policy details such variations;
+        </li>
+        <li>
+          This Policy applies to all the Services provided by Fitme
+          through the  App 
+        </li>
+        <li>
+          This Policy is a part of and should be read in conjunction with our
+          Terms of Service; and
+        </li>
+        <li>
+          This Policy will clarify the rights available to you vis-à-vis the
+          personal data you share with us.
+        </li>
+      </ul>
+      <p>
+        If you have any queries or concerns with this Policy, please contact our
+        Grievance Officer. If you do not agree with the Policy, we would advise
+        you to not visit/use the App.
+      </p>
+
+      <h3>1. INFORMATION WE COLLECT AND HOW WE USE IT</h3>
+
+      <p>
+        If you believe we have used your personal data in violation of the
+        rights above or have not responded to your objections, you may lodge a
+        complaint with your local supervisory authority.
+      </p>
+
+      <h3>3. PUBLISHED CONTENT</h3>
+      <p>
+        Any success stories, comments, messages, blogs, scribbles etc. posted/
+        uploaded/ conveyed/ communicated by you on the public sections of the
+        Website/App becomes published content. We may publish such published
+        content on our Website/App so long as you consent. You may request that
+        such published content be taken down at any time and we shall remove
+        such published content. However, we are not responsible for any actions
+        taken by third-parties with respect to such published content.
+      </p>
+
+      <h3>4. INFORMATION WE GET FROM OTHERS</h3>
+      <p>
+        We may receive data about you from other sources i.e., expert calls,
+        smart watch, surveys, and such data may be added to our Website/App from
+        time to time. Such data may include your behaviour towards various
+        content posted on our Website/App from other sources. We use the data
+        collected from other sources to prepare a specific diet plan and
+        training regime for you. We also use this data for providing, testing,
+        improving, or recommending the Services.
+      </p>
+
+      <h3>5. RETENTION OF PERSONAL INFORMATION</h3>
+      <p>
+        We will store any personal data we collect from you as long as it is
+        necessary in order to facilitate your use of the Services and for
+        ancillary legitimate and essential business purposes – these include,
+        without limitation, for improving our Services, attending to technical
+        issues, and dealing with disputes.
+      </p>
+      <p>
+        We may need to retain your personal data even if you seek deletion
+        thereof, if it is needed to comply with our legal obligations, resolve
+        disputes and enforce our agreements.
+      </p>
+      <p>
+        If you are a Registered User, please be advised that after you terminate
+        your usage of a Service, we may, unless legally prohibited, delete all
+        data provided or collected by you from our servers.
+      </p>
+
+      <h3>6. TRACKING BY OUR ADVERTISEMENT PARTNERS</h3>
+      <p>
+        Upon receiving your specific consent, we may share the data we collect
+        from cookies or web beacons with our advertisement partners to track
+        your visits, establish your non-personal identity and present you with
+        targeted advertisements about our Services.
+      </p>
+
+      <h3>7. COMPLIANCE WITH CHILDREN’S ONLINE PRIVACY PROTECTION ACT</h3>
+      <p>
+        As a business service, we neither knowingly collect or store nor use any
+        personal data of any individuals under the age of 13. We do not target
+        our Services towards individuals under the age of 13. Individuals under
+        the age of 13 should seek the consent of their parents before providing
+        any information about themselves, their parents, or other family members
+        on our Website/App.
+      </p>
+
+      <h3>8. TRANSFER OF INFORMATION</h3>
+      <p>
+        In the ordinary course of business, we may employ other companies and
+        people to assist us in providing certain components of our Services in
+        compliance with the provisions of this Policy. To do so, we may need to
+        share your data with them.
+      </p>
+      <p>
+        Where applicable – if the entities to which these transfers are effected
+        are not situated in countries deemed ‘adequate’ by the European
+        Commission or are not registered under the EU-US Privacy Shield
+        framework, we shall enter into appropriate Data Protection Addendums
+        with the transferee parties that comprehensively protect your data. We
+        shall also put in place industry-standard technical and organizational
+        measures (including robust data handling policies) to ensure that such
+        transfers are completed in accordance with applicable laws.
+      </p>
+      <p>
+        Some of the examples of where we may sub-contract processing activities
+        to third parties include—record keeping, data analysis, marketing
+        assistance, processing payments, and providing customer service.
+      </p>
+
+      <h3>9. THIRD PARTY LINKS</h3>
+      <p>
+        We may display links to third-party websites or applications on our
+        Website or App for advertising or providing you with relevant content.
+        We will not be responsible for such third-party websites or applications
+        if you choose to access them. If you provide any data to such
+        website/application, please ensure you read their policies given that
+        you will no longer be bound by this Policy in doing so.
+      </p>
+      <p>
+        We may receive data whenever you visit a third-party link through our
+        Website/App which includes the date and time of your visit to the
+        third-party website, the web address or URL, technical information about
+        the IP address, browser and the operating system you use and, if you are
+        logged into Fitme, your username.
+      </p>
+
+      <h3>10. COMPELLED DISCLOSURE</h3>
+      <p>
+        In addition to the purposes set out in the Policy, we may disclose any
+        data we collected or processed from you if it is required:
+      </p>
+      <ul>
+        <li>
+          under applicable law or to respond to a legal process, such as a
+          search warrant, court order, or subpoena;
+        </li>
+        <li>
+          to protect our safety, your safety or the safety of others or in the
+          legitimate interest of any party in the context of national security,
+          law enforcement, litigation, criminal investigation or to prevent
+          death or imminent bodily harm;
+        </li>
+        <li>
+          to investigate fraud, credit risk or violation of our Acceptable Use
+          Policy;
+        </li>
+        <li>
+          in connection with legal proceedings brought against Fitme, its
+          officers, employees, affiliates, customers or vendors;
+        </li>
+        <li>
+          to establish, exercise, protect, defend and enforce our legal rights;
+          or
+        </li>
+        <li>
+          when we do a business deal or negotiate a business deal, or our assets
+          are merged or acquired by the other business entity, or during
+          restructuring of business or re-organization, we may have to share
+          information provided by you with the other business entities.
+        </li>
+      </ul>
+
+      <h3>10. SECURITY OF YOUR PERSONAL INFORMATION</h3>
+      <p>
+        We implement industry-standard technical and organizational measures by
+        using a variety of security technologies and procedures to help protect
+        your data from unauthorized access, use, loss, destruction or
+        disclosure. When we collect particularly sensitive data (such as a
+        credit card number or your geo-location), it is encrypted using
+        industry-standard cryptographic techniques including but not limited to
+        PBKDF2, AES256, TLS1.2 &amp; SHA256.
+      </p>
+      <p>
+        The collection, storage, usage, and sharing of your data by the Company
+        shall be in compliance with the Information Technology (Reasonable
+        Security Practices and Procedures and Sensitive Personal Data or
+        Information) Rules, 2011 and other applicable laws.
+      </p>
+      <p>
+        Your password is your first line of defence once you set up a
+        Fitme account, we recommend that you set a strong password which
+        you never share with anyone.
+      </p>
+      <p>
+        We have taken appropriate steps for the security and protection of all
+        our digital platforms including internal applications, however, we shall
+        not be responsible for any breach of security or the disclosure of
+        personal data for reasons outside our control, such as hacking, social
+        engineering, cyber terrorism, espionage by third parties, or any events
+        by way of force majeure such as sabotage, fire, flood, explosion, acts
+        of God, civil commotion, strikes or industrial action of any kind,
+        riots, insurrection, war or acts of government.
+      </p>
+
+      <h3>12. ACCESS, CORRECTION &amp; DELETION</h3>
+      <p>
+        Based on technical feasibility, we will provide you with access to all
+        your personal and sensitive personal data that we maintain about you. We
+        will perform verification before providing you access to this data.
+      </p>
+      <p>
+        You may opt out of our marketing emails by clicking on the ‘opt-out’
+        link provided in the emails. However, we may still send you
+        non-marketing emails about your accounts or any other transactions with
+        you.
+      </p>
+
+
+    </section>
+    <br>
+    <br>
+  
+
+</body></html>

@@ -1,0 +1,87 @@
+.top-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-nav-bar .nav>li {
+    width: auto;
+}
+
+/* Dropdown Button */
+.top-nav-bar .dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.top-nav-bar .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.top-nav-bar .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.top-nav-bar .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.top-nav-bar .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.top-nav-bar .dropdown:hover .dropdown-content {
+    display: block;
+}
+.top-nav-bar .bold-list{
+    font-weight: 500;
+}
+
+.top-nav-bar .hme-logo {
+    width: auto;
+    height: 40px;
+    margin-top: 1%;
+    object-fit: contain;
+}
+
+
+.navbar-wrapper{
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 95%;
+    text-align: justify;
+}
+
+.top-navbar-fixed{
+    background: #fff;
+    left: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .12);
+    top: 0;
+    border-width: 0 0 1px;
+}
